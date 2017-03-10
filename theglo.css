@@ -22,7 +22,7 @@ body {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  background-color: #ffdd00;
+  background-color: yellow;
 }
 
 .row {
