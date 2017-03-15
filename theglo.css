@@ -1,0 +1,95 @@
+body {
+	font-family: 'Space Mono', monospace;
+  height: 100%;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-toggle {
+    z-index:3;
+
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #FFFF67;
+}
+
+.row {
+	min-height: 100px;
+}
+/*makes it so the least the row height can be is 100px*/
+
+
+.middle {
+  margin-top: 16rem;
+}
+
+.header {
+	text-align: center;
+}
+
+.list {
+	text-align: center;
+}
+
+.tab {
+  text-indent: 40px;
+}
+
+.description {
+  text-align: center;
+}
+
+.description .title{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.description .date {
+  font-size: 1.3em;
+}
+
+.description .medium {
+  font-size: 1.3em;
+  font-style: italic;
+
+}
+
+.description .dimensions{
+  font-size: 1.3em;
+}
+
+.row.grid {
+  margin-bottom: 2rem;
+}
+.row.grid img {
+  width: auto;
+  height: 300px;
+}
+
+a.preview {
+  outline-color: #FFFF67;
+  display: block;
+}
+
+a.preview:focus {
+  outline-style: none;
+}
+
+a.preview:hover {
+  outline-style: auto;
+  outline-offset: -2px;
+  outline-width: 15px;
+}
