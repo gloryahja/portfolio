@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+img {
+     max-width: 100%;
+}
+
 .navbar-brand
 {
     position: absolute;
