@@ -93,3 +93,7 @@ a.preview:hover {
   outline-offset: -2px;
   outline-width: 15px;
 }
+
+.imgwrapper {
+   width: 80%;
+}
