@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gloryah Allen</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="gloryah.css"> 
+  <link href="./favicon.ico" rel="shortcut icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 8px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #3A3939;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+  background-color: #19C0EA;
+}
+</style>
+</head>
+
+  <body>
+  <!-- scroll to top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>Up<font color=#3A3939>.</font></strong></button>
+<!--begin nav-->
+  <nav class="navbar fixed-top navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>    
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="index.html"><strong>Gloryah Allen<font color=#19C0EA>.</font></strong></a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About<font color=#19C0EA>.</font></a></li>
+            <li><a href="gloss.html">Gloss<font color=#19C0EA>.</font></a></li>
+          </ul>
+
+      </div>
+    </div>
+  </nav>
+<!--end nav-->
+
+<!--start index-->
+<div class="container">
+ 
+      <!-- insert HERD.png  -->
+    <div class="text-center">
+      <img src="taipei.png" class="img-responsive rounded" alt="i love you">
+    </div>
+  <!--END IMG -->
+
+<!-- video -->
+<div class="row text-center">
+  <p class="caption"> Building the Tai Pei Door was a dynamic approach to a traditional campaign and I truly hope to build more talking doors in the future. Enjoy our finale below: </p>
+  <br>
+  <iframe src="https://player.vimeo.com/video/251999864?color=FFE200&title=0&byline=0&portrait=0" width="940" height="529" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/251999864">"Open For Flavor"</a> from <a href="https://vimeo.com/user61678755">Gloryah Allen</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</div>
+
+<div class="row text-center">
+    <p class="caption">See the full campaign <a href="open for flavor 2017.pdf" target="blank">here</a>.</p>
+    <br>
+    <div class="text-center">
+      <img src="promotions.jpg" class="img-responsive rounded taipei" alt="i love you">
+    </div>
+  </div>
+
+<div class="row copyright text-center">
+    <p class="copyright">Gloryah Allen. 2018 &copy;</p>
+  </div>
+</div>
+      
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+</html>
