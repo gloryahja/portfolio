@@ -9,6 +9,13 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!-- start script calls -->
+<script type="text/javascript" src="ScrollMagic.js"></script>
+<!-- will not need for go live -->
+<script type="text/javascript" src="TweenMax.min.js"></script>
+<script type="text/javascript" src="debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="animation.gsap.js"></script> 
+<!-- end script calls -->
   <link rel="stylesheet" type="text/css" href="gloryah.css"> 
   <link rel="shortcut icon" href="blacklogo.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,6 +42,7 @@
 </head>
 
   <body>
+  <div id="trigger1"></div>
   <!-- scroll to top -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>Up<font color=#3A3939>.</font></strong></button>
 <!--begin nav-->
@@ -96,18 +104,20 @@
 </div>
       
 <script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
+// init controller
+	var myBtnController = new ScrollMagic.Controller();
+// build scene
+	var scene = new ScrollMagic.Scene({
+	      triggerElement: "#trigger1",
+              triggerHook: 0,
+              offset: '20px'
+						})
+						
+	.setTween("#myBtn", 1, {opacity: 1}) 
+// trigger a TweenMax.to tween
+//.addIndicators() 
+// add indicators requires plugin
+.addTo(myBtnController);
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
