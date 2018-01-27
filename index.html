@@ -57,30 +57,37 @@
 <div class="container-fluid">
   <div class="row">
 	    <div class="col-md-6">
-	        <a href="herd"><img src="herdimg2x.png" class ="img-fluid rounded bigger"></a>
+	        <a href="herd.html"><img src="herdimg2x.png" class ="img-fluid rounded bigger"></a>
           <hr class="text-center">
 	        <p class="text-center"><a href="herd.html"> <strong>HERD powered by AT&T</strong></a></p>
 	      	<p class="subtitle text-center">Digital.</p>
 	  	</div>
 
 	    <div class="col-md-6">
-	        <a href="topo"><img src="topoimg2x.png" class ="img-fluid rounded bigger"></a>
+	        <a href="topo.html"><img src="topoimg2x.png" class ="img-fluid rounded bigger"></a>
          <hr class="text-center">
 	        <p class="text-center"><a href="topo.html"> <strong>TOPO Designs</strong></a></p>
 	      	<p class="subtitle text-center">Experiential.</p>
-	    </div> 
+	    </div>
+
+      <section class="main">
+        <a class="arrow-wrap" href="#content">
+        <span class="arrow"></span>
+        <!--<span class="hint">scroll</span>-->
+        </a> 
+      </section>
   </div>
 
  <div class="row">
 	    <div class="col-md-6">
-	        <a href="taipei"><img src="taipeiimg2x.png" class ="img-fluid rounded bigger"></a>
+	        <a href="taipei.html"><img src="taipeiimg2x.png" class ="img-fluid rounded bigger"></a>
         <hr class="text-center">
 	        <p class="text-center text-center"><a href="taipei.html"> <strong>Tai Pei Frozen Foods</strong></a></p>
 	      	<p class="subtitle text-center">Interactive.</p>
 	  	</div>
 
 	    <div class="col-md-6">
-	       <a href="gloss"><img src="gloss2x.png" class ="img-fluid rounded bigger"></a>
+	       <a href="gloss.html"><img src="gloss2x.png" class ="img-fluid rounded bigger"></a>
          <hr class="text-center">
 	       <p class="text-center"><a href="gloss.html"> <strong>Gloss</strong></a></p>
 	       <p class="subtitle text-center">The other stuff that makes me shine.</p>
@@ -93,9 +100,52 @@
 
 </div> 
 
+<script> 
+  //this is where we apply opacity to the arrow
+$(window).scroll( function(){
+
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
+  
+  //get height of window
+  var windowHeight = $(window).height();
+      
+  //set position as percentage of how far the user has scrolled 
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
+
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
+
+});
+
+
+
+
+
+
+//Code stolen from css-tricks for smooth scrolling:
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 
 </body>
 
 </html>
-
