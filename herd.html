@@ -98,20 +98,26 @@
 </div>
       
 <script>
-	// init controller
+// init controller
 	var myBtnController = new ScrollMagic.Controller();
-		// build scene
-		var scene = new ScrollMagic.Scene({
-							triggerElement: "#trigger1",
+// build scene
+	var scene = new ScrollMagic.Scene({
+	      triggerElement: "#trigger1",
               triggerHook: 0,
               offset: '20px'
 						})
-		
+						
 	.setTween("#myBtn", 1, {opacity: 1}) 
-	// trigger a TweenMax.to tween
-	//.addIndicators() 
-	// add indicators requires plugin
-	.addTo(myBtnController);
+// trigger a TweenMax.to tween
+//.addIndicators() 
+// add indicators requires plugin
+.addTo(myBtnController);
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 </script>
 
 
