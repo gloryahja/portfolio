@@ -99,7 +99,7 @@ border-color: #3A3939 transparent transparent transparent;
     -webkit-animation-delay: 3s;
   }
 
-middle {
+div.container.dark.middle {
    margin-top: 200px;
 }
 
