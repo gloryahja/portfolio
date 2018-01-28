@@ -99,8 +99,8 @@ border-color: #3A3939 transparent transparent transparent;
     -webkit-animation-delay: 3s;
   }
 
-div.container.middle {
-   margin-top: 200px;
+div.container.dark.middle {
+   margin-top: 200px !important;
 }
 
 body.dark {
@@ -279,9 +279,6 @@ div.row.copyright {
   padding-top: 70px;
 }
 
-div.404 {
-	margin-top: 50px;
-}
 
 .col-md-4 {
   padding-top: 20px;
