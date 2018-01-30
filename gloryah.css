@@ -210,7 +210,7 @@ button.navbar-toggle.dark {
 
 .navbar-default .navbar-nav.dark>li>a {
     color: #ffffff;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 
@@ -264,7 +264,7 @@ span.icon-bar.dark {
 
 .navbar-default .navbar-nav>li>a {
     color: #3A3939;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
