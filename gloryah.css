@@ -265,6 +265,7 @@ span.icon-bar.dark {
 .navbar-default .navbar-nav>li>a {
     color: #3A3939;
     font-size: 2em;
+    border-radius: 5px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
