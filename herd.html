@@ -38,13 +38,18 @@
 #myBtn:hover {
   background-color: #19C0EA;
 }
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
 </style>
 </head>
 
   <body>
 <div id="trigger1"></div>
   <!-- scroll to top -->
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>Up<font color=#3A3939>.</font></strong></button>
+  <button onclick="topFunction()" id="myBtn" title="Back to Top"><strong><i class="up"></i></strong></button>
 <!--begin nav-->
   <nav class="navbar fixed-top navbar-default" role="navigation">
     <div class="container">
